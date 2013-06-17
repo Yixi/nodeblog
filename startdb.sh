@@ -1,0 +1,1 @@
+/Users/liuyixi/bin/mongodb-osx-x86_64-2.4.4/bin/mongod -dbpath /Users/liuyixi/Sites/nodeblog/db/
