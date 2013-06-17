@@ -1,0 +1,24 @@
+//- register page
+
+extends layout
+block content
+    form.form-horizontal(method='post')
+        div.control-group
+            label.control-label(for="inputUsername") Username
+            div.controls
+                input#inputUsername(type="text",placeholder="Username",name="name")
+        div.control-group
+            label.control-label(for="inputPassword") Password
+            div.controls
+                input#inputPassword(type='password',placeholder="Password",name="password")
+        div.control-group
+            label.control-label(for="inputPasswordRepeat") Password-repeat
+            div.controls
+                input#inputPasswordRepeat(type='password',placeholder="Password-repeat",name="password-repeat")
+        div.control-group
+            label.control-label(for="inputEmail") E-mail
+            div.controls
+                input#inputEmail(type="email",name="email",placeholder="Email",name="email")
+        div.control-group
+            div.controls
+                button.btn(type="submit") Sign in
