@@ -1,0 +1,16 @@
+//- post page
+
+extends layout
+block content
+    form.form-horizontal(method='post')
+        div.control-group
+            label.control-label(for="inputTitle") title
+            div.controls
+                input#inputTitle(type="text",placeholder="title",name="title")
+        div.control-group
+            label.control-label(for="inputContent") Content
+            div.controls
+                textarea#inputContent.input-xxlarge(name="post",rows="20")
+        div.control-group
+        div.controls
+            button.btn(type="submit") Post

@@ -1,5 +1,12 @@
 extends layout
 
 block content
-    p this is home page
+    each post,i in posts
+        h3
+            a(href="#") #{post.title}
+            p
+                small by #{post.name} at #{post.time.minute}
+        p.
+            #{post.post}
+
 
